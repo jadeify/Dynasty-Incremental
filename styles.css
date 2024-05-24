@@ -2,6 +2,10 @@
     font-family: 'JBMono';
     src: url("JetBrainsMono-Regular.ttf");
 }
+@font-face {
+    font-family: 'JBMono';
+    src: url("JetBrainsMono-Regular.ttf");
+}
 
 .sectionLeft{
     float:left;
