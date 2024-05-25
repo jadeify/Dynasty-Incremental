@@ -8,15 +8,21 @@
         <body style="background-color:rgb(50,50,50)">
             <div class="sectionLeft">
                 <div class="resourcesContainer">
-                    <span style="font-weight:bold;font-size:20px">Resources</span><br>
-                    <span id="money">0</span> money (+<span id="moneyPS">0</span> /s)<br>
-                    <span id="wheat">0</span> wheat (+<span id="wheatPS">0</span> /s)<br>
-                    <span id="stone">0</span> stone (+<span id="stonePS">0</span> /s)<br>
-                    <button onclick="sellResources()" id="sellButton">Sell Resources for $</button>
+                    &nbsp<span style="font-weight:bold;font-size:20px">Resources</span><br>
+                    &nbsp<span id="money">0</span> money (+<span id="moneyPS">0</span>/s)<br>
+                    &nbsp<span id="wheat">0</span> wheat (+<span id="wheatPS">0</span>/s)<br>
+                    &nbsp<span id="stone">0</span> stone (+<span id="stonePS">0</span>/s)<br>
+                    &nbsp<button onclick="sellResources()" id="sellButton">Sell Resources for $</button>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
                 </div>
                 <div class="buildingsContainer">
-                    <button onclick="buyBuilding('farm')" class="buildings">Buy Farm [<span id="farmcost">15 Money</span>] <span id="farms">0 Farms</span></button>
-                    <br>
+                    <button onclick="buyBuilding('farm')" class="buildings" id="farm">Buy Farm [<span id="farmcost">15 Money</span>] <span id="farms">0 Farms</span></button>
                     <button onclick="buyBuilding('mine')" class="buildings">Buy Mine [<span id="minecost">100 Money</span>] <span id="mines">0 Mines</span></button>
                     <br>
                     <br>

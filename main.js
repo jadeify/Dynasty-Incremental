@@ -1,8 +1,9 @@
 let resources={money:15,wheat:0,stone:0}
 let previousResources={money:15,wheat:0,stone:0}
-let farm={amt:0,price:15,rate:0.1}
-let mine={amt:0,price:100,rate:0.1}
-let buildings={farm,mine}
+let buildings={
+    farm:{amt:0,price:15,rate:0.1},
+    mine:{amt:0,price:100,rate:0.1}
+}
 function buyBuilding(building){
     if(resources.money>=buildings[building].price){
         resources.money-=buildings[building].price;

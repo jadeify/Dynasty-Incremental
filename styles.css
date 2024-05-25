@@ -2,11 +2,6 @@
     font-family: 'JBMono';
     src: url("JetBrainsMono-Regular.ttf");
 }
-@font-face {
-    font-family: 'JBMono';
-    src: url("JetBrainsMono-Regular.ttf");
-}
-
 .sectionLeft{
     float:left;
     width:40%;
@@ -16,37 +11,38 @@
     width:50%;
 }
 .buildings{
-    float:right;
+    float:none;
     text-align: center;
     font-size:15px;
-    width:100%;
+    width:95%;
     height:50px;
     border-radius: 10px;
-    margin-bottom: 5px;
+    display: block;
+    margin:auto;
+    margin-bottom: 8px;
     font-family:"JBMono";
 
 }
 .buildingsContainer{
     background-color: darkgray;
     border-radius:10px;
-    padding:8px;
-    width:65%;
+    width:67%;
     float:right;
 }
 .resourcesContainer{
     background-color: darkgray;
-    width:30%;
-    padding:8px;
+    width:31%;
     border-radius: 10px;
     font-size:16px;
     text-align:left;
     float:left;
+    margin:auto;
     font-family:"JBMono";
-}
-#mps{
-    color: rgb(0,170,0);
 }
 #sellButton{
     padding:6px;
     border-radius: 10px;
+}
+#farm{
+    margin-top:8px;
 }
