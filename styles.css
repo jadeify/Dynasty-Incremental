@@ -46,3 +46,7 @@
 #mps{
     color: rgb(0,170,0);
 }
+#sellButton{
+    padding:6px;
+    border-radius: 10px;
+}
