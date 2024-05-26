@@ -9,36 +9,30 @@
             <div class="sectionLeft">
                 <div class="resourcesContainer">
                     <div class="resources">
-                        <span style="font-weight:bold;font-size:20px">Resources</span><br>
+                        <span style="font-weight:bold;font-size:2vmin">Resources</span><br>
                         <span id="money">0</span> money (+<span id="moneyPS">0</span>/s)<br>
                         <span id="wheat">0</span> wheat (+<span id="wheatPS">0</span>/s)<br>
+                        <span id="cotton">0</span> cotton (+<span id="cottonPS">0</span>/s)<br>
                         <span id="stone">0</span> stone (+<span id="stonePS">0</span>/s)<br>
+                        <span id="metal">0</span> metal (+<span id="metalPS">0</span>/s)<br>
+                        <span id="coal">0</span> coal (+<span id="coalPS">0</span>/s)<br>
                         <button onclick="sellResources()" id="sellButton">Sell Resources for $</button>
                     </div>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
                 </div>
                 <div class="buildingsContainer">
-                    <button onclick="buyBuilding('farm')" class="buildings" id="farm">Buy Farm [<span id="farmcost">15 Money</span>] <span id="farms">0 Farms</span></button>
-                    <button onclick="buyBuilding('mine')" class="buildings">Buy Mine [<span id="minecost">100 Money</span>] <span id="mines">0 Mines</span></button>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
+                    <button onclick="buyBuilding('farm')" class="buildings" id="farm">Buy Farm [<span id="farmCost">15 Money</span>] <span id="farms">0 Farms</span></button>
+                    <button class="workerChangeButton" onclick="changeWorkerAmount('farm',-1)">-</button><span class="workerAssigned" class="workerChangeButton" id="farmWorkerAssigned"> 0 </span><button class="workerChangeButton" onclick="changeWorkerAmount('farm',1)">+</button>
+                    <button onclick="buyBuilding('mine')" class="buildings">Buy Mine [<span id="mineCost">100 Money</span>] <span id="mines">0 Mines</span></button>
+                    <button class="workerChangeButton" onclick="changeWorkerAmount('mine',-1)">-</button><span class="workerAssigned" class="workerChangeButton" id="mineWorkerAssigned"> 0 </span><button class="workerChangeButton" onclick="changeWorkerAmount('mine',1)">+</button>
+                </div>
+            </div>
+            <div class="sectionMiddle">
+                <div class="workersContainer">
+                    <div class="workers">
+                        <span style="font-weight:bold;font-size:2vmin">Workers</span><br>
+                        Amount: <span id="workersAmt">0</span><br>
+                        <button onClick="buyWorker()" id="workerButton">Hire Worker [<span id="workerCost">50 Money/min</span>]</button>
+                    </div>
                 </div>
             </div>
             <div class="sectionRight">

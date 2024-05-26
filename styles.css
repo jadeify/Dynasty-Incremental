@@ -4,21 +4,28 @@
 }
 .sectionLeft{
     float:left;
-    width:40%;
+    width:30%;
+}
+.sectionMiddle{
+    float:left;
+    width:34.7%;
+    margin-left:0.3%;
 }
 .sectionRight{
-    float:right;
-    width:50%;
+    float:left;
+    width:34.7%;
+    margin-left:0.3%;
 }
 .buildings{
-    float:none;
+    float:left;
     text-align: center;
-    font-size:15px;
-    width:95%;
-    height:50px;
+    font-size:1.6vmin;
+    text-wrap:auto;
+    width:70%;
+    height:5vmin;
     border-radius: 10px;
     display: block;
-    margin:auto;
+    margin-left:8px;
     margin-bottom: 8px;
     font-family:"JBMono";
 
@@ -26,27 +33,73 @@
 .buildingsContainer{
     background-color: darkgray;
     border-radius:10px;
-    width:67%;
-    float:right;
+    width:55%;
+    margin-left:1%;
+    float:left;
+    max-height:100%;
 }
 .resourcesContainer{
     background-color: darkgray;
-    width:31%;
+    width:44%;
     border-radius: 10px;
-    font-size:16px;
+    font-size:1.6vmin;
+    text-wrap:auto;
     text-align:left;
+    max-height:100%;
     float:left;
     margin:auto;
     font-family:"JBMono";
 }
 #sellButton{
     padding:6px;
+    font-size:1.3vmin;
+    text-wrap:auto;
+    margin-top:3%;
     border-radius: 10px;
+    font-family:"JBMono";
 }
 #farm{
     margin-top:8px;
 }
-.resources{
-    margin-top:8px;
-    margin-left:8px;
+.resources {
+    margin-top: 8px;
+    margin-left: 8px;
+    margin-bottom: 8px;
+}
+
+.workersContainer{
+    background-color: darkgray;
+    border-radius:10px;
+    width:50%;
+    float:left;
+    font-size:1.6vmin;
+    text-wrap:auto;
+    text-align:left;
+    font-family:"JBMono";
+
+}
+.workers {
+    margin-top: 8px;
+    margin-left: 8px;
+    margin-bottom:8px;
+}
+#workerButton{
+    font-family:"JBMono";
+    padding:6px;
+    border-radius: 10px;
+    font-size:1.3vmin;
+    text-wrap:auto;
+}
+.workerChangeButton{
+    margin-left:0.2vmin;
+    margin-top: 2vmin;
+    margin-bottom:1.4vmin;
+    font-size:1.6vmin;
+    font-family:"JBMono";
+    border-radius: 10px;
+}
+.workerAssigned{
+    font-weight:bold;
+    font-family:"JBMono";
+    font-size:1.6vmin;
 }
