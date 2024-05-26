@@ -1,5 +1,5 @@
 let resources={
-    money:{amt:15},
+    money:{amt:new Decimal(15)},
     wheat:{amt:0,er:2},
     cotton:{amt:0,er:5},
     stone:{amt:0,er:3},
