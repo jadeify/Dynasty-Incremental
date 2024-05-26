@@ -1,6 +1,7 @@
+
 let resources={
-    money:{amt:new Decimal(15)},
-    wheat:{amt:new Decimal(0),er:Decimal(2)},
+    money:{amt:15},
+    wheat:{amt:0,er:2},
     cotton:{amt:0,er:5},
     stone:{amt:0,er:3},
     metal:{amt:0,er:7},
@@ -11,7 +12,7 @@ let buildings={
     farm:{amt:0,price:15,rate1:0.15,rate2:0.07},
     mine:{amt:0,price:100,rate1:0.13,rate2:0.06,rate3:0.1}
 }
-let employees=[];
+let employees=[{intelligence:0}];
 function buyBuilding(building){
     if(resources.money.amt>=buildings[building].price){
         resources.money.amt-=buildings[building].price;
@@ -47,7 +48,7 @@ function updateValues(){
 function sellResources(){
     for (let i = 1; i < Object.keys(resources).length; i++) {
         resources.money.amt+=(resources[Object.keys(resources)[i]].amt*resources[Object.keys(resources)[i]].er);
-        resources[Object.keys(resources)[i]].amt=new Decimal(0);
+        resources[Object.keys(resources)[i]].amt=0;
     }
 }
 function storePastValues(){
