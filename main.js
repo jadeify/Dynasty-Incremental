@@ -1,6 +1,6 @@
 let resources={
     money:{amt:new Decimal(15)},
-    wheat:{amt:0,er:2},
+    wheat:{amt:new Decimal(0),er:Decimal(2)},
     cotton:{amt:0,er:5},
     stone:{amt:0,er:3},
     metal:{amt:0,er:7},
@@ -47,7 +47,7 @@ function updateValues(){
 function sellResources(){
     for (let i = 1; i < Object.keys(resources).length; i++) {
         resources.money.amt+=(resources[Object.keys(resources)[i]].amt*resources[Object.keys(resources)[i]].er);
-        resources[Object.keys(resources)[i]].amt=0;
+        resources[Object.keys(resources)[i]].amt=new Decimal(0);
     }
 }
 function storePastValues(){
