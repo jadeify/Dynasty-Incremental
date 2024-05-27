@@ -1,4 +1,4 @@
-import Decimal from 'break_infinity.js';
+const Decimal = require('break_infinity.js');
 import * as ADNotations from '@antimatter-dimensions/notations';
 const mixedScientific=new ADNotations.MixedScientificNotation();
 let resources={
