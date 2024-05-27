@@ -25,10 +25,13 @@
     height:5vmin;
     border-radius: 10px;
     display: block;
-    margin-left:8px;
-    margin-bottom: 8px;
+    margin-left:0.9vmin;
+    margin-bottom: 0.9vmin;
     font-family:"JBMono";
 
+}
+.buildings:hover{
+    background-color: rgb(200,200,200)
 }
 .buildingsContainer{
     background-color: darkgray;
@@ -51,20 +54,24 @@
     font-family:"JBMono";
 }
 #sellButton{
-    padding:6px;
     font-size:1.3vmin;
     text-wrap:auto;
     margin-top:3%;
+    width:68%;
+    height: 3.7vmin;
     border-radius: 10px;
     font-family:"JBMono";
 }
+#sellButton:hover{
+    background-color:rgb(200,200,200)
+}
 #farm{
-    margin-top:8px;
+    margin-top:0.9vmin;
 }
 .resources {
-    margin-top: 8px;
-    margin-left: 8px;
-    margin-bottom: 8px;
+    margin-top:0.9vmin;
+    margin-left:0.9vmin;
+    margin-bottom:0.9vmin;
 }
 
 .workersContainer{
@@ -79,37 +86,39 @@
 
 }
 .workers {
-    margin-top: 8px;
-    margin-left: 8px;
-    margin-bottom:8px;
+    margin-top:0.9vmin;
+    margin-left:0.9vmin;
+    margin-bottom:0.9vmin;
 }
 #workerButton{
     font-family:"JBMono";
-    padding:6px;
+    margin-top:0.9vmin;
+    height:3.7vmin;
+    width:68%;
     border-radius: 10px;
     font-size:1.3vmin;
     text-wrap:auto;
 }
+#workerButton:hover{
+    background-color: rgb(200,200,200)
+}
+.workerChangeButtonContainer{
+    margin-top:2.1vmin;
+    font-size: 1.6vmin;
+    font-family: "JBMono";
+    text-align: center;
+}
 .workerChangeButton{
-    margin-left:0.2vmin;
-    margin-top: 2vmin;
-    margin-bottom:1.4vmin;
-    font-size:1.6vmin;
-    font-family:"JBMono";
-    border-radius: 10px;
+    border-radius:10px;
+    margin-bottom:3.8vmin;
+    font-size:1.3vmin;
+    height:2.4vmin;
+    width:2.4vmin;
 }
-.workerAssigned{
+.workerChangeButton:hover{
+     background-color: rgb(200,200,200)
+ }
+.workersAssigned{
     font-weight:bold;
-    font-family:"JBMono";
-    font-size:1.6vmin;
-    margin-left:0.2vmin;
-    margin-top: 2vmin;
-    margin-bottom:1.4vmin;
-    border-radius: 10px;
 }
-.farmThings{
-    width:95%;
-}
-.mineThings{
-    width:95%;
-}
+

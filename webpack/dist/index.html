@@ -21,10 +21,12 @@
                     </div>
                 </div>
                 <div class="buildingsContainer">
-                        <button onclick="lib.buyBuilding('farm')" class="buildings" id="farm">Buy Farm [<span id="farmCost">15 Money</span>] <span id="farms">0 Farms</span></button>
-                        <button class="workerChangeButton" onclick="lib.changeWorkerAmount('farm',-1)">-</button><span class="workerAssigned" id="farmWorkerAssigned"> 0 </span><button class="workerChangeButton" onclick="lib.changeWorkerAmount('farm',1)">+</button>
-                        <button onclick="lib.buyBuilding('mine')" class="buildings">Buy Mine [<span id="mineCost">100 Money</span>] <span id="mines">0 Mines</span></button>
-                        <button class="workerChangeButton" onclick="lib.changeWorkerAmount('mine',-1)">-</button><span class="workerAssigned" id="mineWorkerAssigned"> 0 </span><button class="workerChangeButton" onclick="lib.changeWorkerAmount('mine',1)">+</button>
+                    <button onclick="lib.buyBuilding('farm')" class="buildings" id="farm">Buy Farm [<span id="farmCost">15 Money</span>] <span id="farms">0 Farms</span></button>
+                    <button onclick="lib.buyBuilding('mine')" class="buildings">Buy Mine [<span id="mineCost">100 Money</span>] <span id="mines">0 Mines</span></button>
+                    <div class="workerChangeButtonContainer">
+                        <button class="workerChangeButton" onclick="lib.changeWorkerAmount('farm',-1)">-</button><span class="workersAssigned" id="farmWorkerAssigned"> 0 </span><button class="workerChangeButton" onclick="lib.changeWorkerAmount('farm',1)">+</button>
+                        <button class="workerChangeButton" onclick="lib.changeWorkerAmount('mine',-1)">-</button><span class="workersAssigned" id="mineWorkerAssigned"> 0 </span><button class="workerChangeButton" onclick="lib.changeWorkerAmount('mine',1)">+</button>
+                    </div>
                 </div>
             </div>
             <div class="sectionMiddle">
