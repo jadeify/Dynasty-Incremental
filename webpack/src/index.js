@@ -1,4 +1,6 @@
-
+import Decimal from 'break_infinity.js';
+import * as ADNotations from '@antimatter-dimensions/notations';
+const mixedScientific=new ADNotations.MixedScientificNotation();
 let resources={
     money:{amt:15},
     wheat:{amt:0,er:2},
