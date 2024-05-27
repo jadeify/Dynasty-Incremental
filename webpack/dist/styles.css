@@ -27,8 +27,6 @@
     display: block;
     margin-left:0.9vmin;
     margin-bottom: 0.9vmin;
-    font-family:"JBMono";
-
 }
 .buildings:hover{
     background-color: rgb(200,200,200)
@@ -51,7 +49,6 @@
     max-height:100%;
     float:left;
     margin:auto;
-    font-family:"JBMono";
 }
 #sellButton{
     font-size:1.3vmin;
@@ -60,13 +57,12 @@
     width:68%;
     height: 3.7vmin;
     border-radius: 10px;
-    font-family:"JBMono";
 }
 #sellButton:hover{
     background-color:rgb(200,200,200)
 }
 #farm{
-    margin-top:0.9vmin;
+    margin-top:1.3vmin;
 }
 .resources {
     margin-top:0.9vmin;
@@ -82,7 +78,6 @@
     font-size:1.6vmin;
     text-wrap:auto;
     text-align:left;
-    font-family:"JBMono";
 
 }
 .workers {
@@ -91,7 +86,6 @@
     margin-bottom:0.9vmin;
 }
 #workerButton{
-    font-family:"JBMono";
     margin-top:0.9vmin;
     height:3.7vmin;
     width:68%;
@@ -103,14 +97,13 @@
     background-color: rgb(200,200,200)
 }
 .workerChangeButtonContainer{
-    margin-top:2.1vmin;
+    margin-top:2.5vmin;
     font-size: 1.6vmin;
-    font-family: "JBMono";
     text-align: center;
 }
 .workerChangeButton{
     border-radius:10px;
-    margin-bottom:3.8vmin;
+    margin-bottom:3.6vmin;
     font-size:1.3vmin;
     height:2.4vmin;
     width:2.4vmin;
@@ -120,5 +113,11 @@
  }
 .workersAssigned{
     font-weight:bold;
+}
+html{
+    font-family:"JBMono";
+}
+button{
+    font-family:"JBMono";
 }
 
