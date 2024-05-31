@@ -4,46 +4,48 @@
 }
 .sectionLeft{
     float:left;
-    width:30%;
+    position:fixed;
+    top:10px;
+    left:10px;
+    width:640px;
 }
 .sectionMiddle{
     float:left;
-    width:34.7%;
-    margin-left:0.3%;
+    position:fixed;
+    left:612px;
+    top:10px;
+    width:640px;
 }
 .sectionRight{
     float:left;
-    width:34.7%;
-    margin-left:0.3%;
+    position:fixed;
+    width:640px;
 }
 .buildings{
     float:left;
     text-align: center;
-    font-size:1.6vmin;
+    font-size:15px;
     text-wrap:auto;
     width:70%;
-    height:5vmin;
-    border-radius: 10px;
+    height:49px;
     display: block;
-    margin-left:0.9vmin;
-    margin-bottom: 0.9vmin;
+    margin-left:8px;
+    margin-bottom:8px;
 }
 .buildings:hover{
     background-color: rgb(200,200,200)
 }
 .buildingsContainer{
     background-color: darkgray;
-    border-radius:10px;
-    width:55%;
+    width:54%;
     margin-left:1%;
     float:left;
     max-height:100%;
 }
 .resourcesContainer{
     background-color: darkgray;
-    width:44%;
-    border-radius: 10px;
-    font-size:1.6vmin;
+    width:38%;
+    font-size:15px;
     text-wrap:auto;
     text-align:left;
     max-height:100%;
@@ -51,68 +53,65 @@
     margin:auto;
 }
 #sellButton{
-    font-size:1.3vmin;
+    font-size:12px;
     text-wrap:auto;
     margin-top:3%;
     width:68%;
-    height: 3.7vmin;
-    border-radius: 10px;
+    height: 36px;
 }
 #sellButton:hover{
     background-color:rgb(200,200,200)
 }
 #farm{
-    margin-top:1.3vmin;
+    margin-top:12px;
 }
 .resources {
-    margin-top:0.9vmin;
-    margin-left:0.9vmin;
-    margin-bottom:0.9vmin;
+    margin-top:8px;
+    margin-left:8px;
+    margin-bottom:8px;
 }
 
 .workersContainer{
     background-color: darkgray;
-    border-radius:10px;
     width:50%;
     float:left;
-    font-size:1.6vmin;
+    font-size:15px;
     text-wrap:auto;
     text-align:left;
-
 }
 .workers {
-    margin-top:0.9vmin;
-    margin-left:0.9vmin;
-    margin-bottom:0.9vmin;
+    margin-top:8px;
+    margin-left:8px;
+    margin-bottom:8px;
 }
 #workerButton{
-    margin-top:0.9vmin;
-    height:3.7vmin;
+    margin-top:8px;
+    height:36px;
     width:68%;
-    border-radius: 10px;
-    font-size:1.3vmin;
+    font-size:12px;
     text-wrap:auto;
 }
 #workerButton:hover{
     background-color: rgb(200,200,200)
 }
 .workerChangeButtonContainer{
-    margin-top:2.5vmin;
-    font-size: 1.6vmin;
-    text-align: center;
+    margin-top:24px;
+    font-size:15px;
+    text-align: left;
 }
 .workerChangeButton{
-    border-radius:10px;
-    margin-bottom:3.6vmin;
-    font-size:1.3vmin;
-    height:2.4vmin;
-    width:2.4vmin;
+    margin-bottom:35px;
+    font-size:12px;
+    height:23px;
+    width:23px;
 }
 .workerChangeButton:hover{
      background-color: rgb(200,200,200)
  }
 .workersAssigned{
-    font-weight:bold;
+    text-align:center;
+    background-color:rgb(200,200,200);
+    border: black solid 2px;
 }
 html{
     font-family:"JBMono";
