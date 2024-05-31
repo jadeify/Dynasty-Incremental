@@ -5,6 +5,8 @@ module.exports = {
         library: 'lib',
     },
     optimization: {
-        mangleExports: true,
+        mangleExports: false,
+        checkWasmTypes: false,
     },
-};
+    devtool: 'source-map',
+}
