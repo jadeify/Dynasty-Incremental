@@ -4,4 +4,7 @@ module.exports = {
     output: {
         library: 'lib',
     },
+    optimization: {
+        mangleExports: true,
+    },
 };
