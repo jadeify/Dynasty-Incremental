@@ -18,7 +18,7 @@ let employees=[{intelligence:0}];
 export function buyBuilding(building){
 	if(resources.money.amt.greaterThanOrEqualTo(buildings[building].price)){
 		resources.money.amt=resources.money.amt.minus(buildings[building].price);
-		buildings[building].price=buildings[building].price.times(1.2).round();
+		buildings[building].price=buildings[building].price.times(1.2);
 		buildings[building].amt=buildings[building].amt.add(1);
 	}
 }
