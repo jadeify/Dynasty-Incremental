@@ -1,5 +1,5 @@
-import Decimal from "break_infinity.js";
-import * as ADNotations from "@antimatter-dimensions/notations";
+import Decimal from "../node_modules/break_infinity.js/dist/break_infinity.esm.js";
+import * as ADNotations from "../node_modules/@antimatter-dimensions/notations/dist/ad-notations.esm.js";
 const mixedScientific=new ADNotations.MixedScientificNotation();
 let resources={
 	money:{amt:new Decimal(15)},
@@ -14,7 +14,10 @@ let buildings={
 	farm:{amt:new Decimal(0),price:new Decimal(15),rate1:new Decimal(0.15),rate2:new Decimal(0.07)},
 	mine:{amt:new Decimal(0),price:new Decimal(100),rate1:new Decimal(0.13),rate2:new Decimal(0.06),rate3:new Decimal(0.1)}
 };
-let employees=[{intelligence:0}];
+let employees=[{name:"john figgle",intelligence:new Decimal(1),}];
+function addEmployee(name, intelligence, charisma, strength, vitality, dexterity){
+	employees.push({name:name, intelligence:intelligence, charisma:charisma, strength:strength, vitality:vitality, dexterity:dexterity});
+}
 export function buyBuilding(building){
 	if(resources.money.amt.greaterThanOrEqualTo(buildings[building].price)){
 		resources.money.amt=resources.money.amt.minus(buildings[building].price);
@@ -22,7 +25,7 @@ export function buyBuilding(building){
 		buildings[building].amt=buildings[building].amt.add(1);
 	}
 }
-export function buyWorker(){
+function hireWorker(){
 
 }
 function updateValues(){
