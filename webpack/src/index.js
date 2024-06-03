@@ -57,7 +57,7 @@ function storePastValues(){
 export function changeWorkerAmount(building,amount){
 
 }
-setInterval(function(){
+function runGameTick(){
 	storePastValues();
 	resources.wheat.amt=resources.wheat.amt.add(buildings.farm.amt.times(buildings.farm.rate1.dividedBy(20)));
 	resources.cotton.amt=resources.cotton.amt.add(buildings.farm.amt.times(buildings.farm.rate2.dividedBy(20)));
@@ -66,4 +66,8 @@ setInterval(function(){
 	resources.coal.amt=resources.coal.amt.add(buildings.mine.amt.times(buildings.mine.rate3.dividedBy(20)));
 	document.title = "$"+mixedScientific.format(resources.money.amt,2,2)+" - Dynasty Incremental";
 	updateValues();
-},50);
+}
+while(true){
+	setTimeout(50);
+	runGameTick()
+}

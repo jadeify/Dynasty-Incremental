@@ -4,6 +4,7 @@ module.exports = {
     output: {
         library: 'lib',
     },
+    mode: 'none',
     optimization: {
         mangleExports: false,
         checkWasmTypes: false,
