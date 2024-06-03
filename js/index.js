@@ -1,5 +1,5 @@
-import Decimal from "./libraries/break_infinity";
-import * as ADNotations from "./libraries/antimatter-dimensions-notations";
+import Decimal from "break_infinity.js";
+import * as ADNotations from "@antimatter-dimensions/notations";
 const mixedScientific=new ADNotations.MixedScientificNotation();
 let resources={
 	money:{amt:new Decimal(15)},
