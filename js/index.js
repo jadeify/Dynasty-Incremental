@@ -25,7 +25,7 @@ export function buyBuilding(building){
 		buildings[building].amt=buildings[building].amt.add(1);
 	}
 }
-function hireWorker(){
+export function hireWorker(){
 
 }
 function updateValues(){
