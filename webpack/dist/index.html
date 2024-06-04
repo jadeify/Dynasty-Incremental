@@ -21,11 +21,11 @@
                     </div>
                 </div>
                 <div class="buildingsContainer">
-                    <button onclick="lib.buyBuilding('farm')" class="buildings" id="farm">Buy Farm [<span id="farmCost">15 Money</span>]<br> <span id="farms">0 Farms</span></button>
-                    <button onclick="lib.buyBuilding('mine')" class="buildings">Buy Mine [<span id="mineCost">100 Money</span>]<br> <span id="mines">0 Mines</span></button>
+                    <button onclick="lib.buyBuilding('farm')" class="buildings" id="farm">Farm  (<span id="farms">0</span>)</button><span id="farmHover"><span id="farmCost">15 Money</span></span>
+                    <button onclick="lib.buyBuilding('mine')" class="buildings" id="mine">Mine  (<span id="mines">0</span>)</button><span id="mineHover"><span id="mineCost">100 Money</span></span>
                     <div class="workerChangeButtonContainer">
-                        <button class="workerChangeButton" onclick="lib.changeWorkerAmount('farm',-1)">-</button>&nbsp<button class="workerChangeButton" onclick="lib.changeWorkerAmount('farm',1)">+</button><span class="workersAssigned" id="farmWorkerAssigned">&nbsp0&nbsp</span><br>
-                        <button class="workerChangeButton" onclick="lib.changeWorkerAmount('mine',-1)">-</button>&nbsp<button class="workerChangeButton" onclick="lib.changeWorkerAmount('mine',1)">+</button><span class="workersAssigned" id="mineWorkerAssigned">&nbsp0&nbsp</span>
+                        <button class="workerChangeButton" onclick="lib.changeWorkerAmount('farm',-1)">-</button>&nbsp<button class="workerChangeButton" onclick="lib.changeWorkerAmount('farm',1)">+</button><span class="workersAssigned"><span id="farmWorkerAssigned">&nbsp0</span>/<span id="maxFarmWorkers">0</span>&nbsp</span><br>
+                        <button class="workerChangeButton" onclick="lib.changeWorkerAmount('mine',-1)">-</button>&nbsp<button class="workerChangeButton" onclick="lib.changeWorkerAmount('mine',1)">+</button><span class="workersAssigned"><span id="mineWorkerAssigned">&nbsp0</span>/<span id="maxMineWorkers">0</span>&nbsp</span>
                     </div>
                 </div>
             </div>

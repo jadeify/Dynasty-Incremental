@@ -1,4 +1,3 @@
-import _ from 'lodash';
 import Decimal from "break_infinity.js";
 import * as ADNotations from "@antimatter-dimensions/notations";
 const mixedScientific=new ADNotations.MixedScientificNotation();
@@ -37,9 +36,9 @@ function updateValues(){
 	document.getElementById("metal").innerHTML=mixedScientific.format(resources.metal.amt,2,2);
 	document.getElementById("coal").innerHTML=mixedScientific.format(resources.coal.amt,2,2);
 	document.getElementById("farmCost").innerHTML=mixedScientific.format(buildings.farm.price,2,2)+" Money";
-	document.getElementById("farms").innerHTML=mixedScientific.format(buildings.farm.amt,0,0)+" Farms";
+	document.getElementById("farms").innerHTML=mixedScientific.format(buildings.farm.amt,0,0);
 	document.getElementById("mineCost").innerHTML=mixedScientific.format(buildings.mine.price,2,2)+" Money";
-	document.getElementById("mines").innerHTML=mixedScientific.format(buildings.mine.amt,0,0)+" Mines";
+	document.getElementById("mines").innerHTML=mixedScientific.format(buildings.mine.amt,0,0);
 	document.getElementById("moneyPS").innerHTML=mixedScientific.format((resources.money.amt.minus(previousResources.money).times(20)),2,2);
 	document.getElementById("wheatPS").innerHTML=mixedScientific.format((resources.wheat.amt.minus(previousResources.wheat).times(20)),2,2);
 	document.getElementById("cottonPS").innerHTML=mixedScientific.format((resources.cotton.amt.minus(previousResources.cotton).times(20)),2,2);

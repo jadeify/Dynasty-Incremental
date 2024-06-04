@@ -7,12 +7,12 @@
     position:fixed;
     top:10px;
     left:10px;
-    width:640px;
+    width:900px;
 }
 .sectionMiddle{
     float:left;
     position:fixed;
-    left:612px;
+    left:855px;
     top:10px;
     width:640px;
 }
@@ -26,7 +26,7 @@
     text-align: center;
     font-size:15px;
     text-wrap:auto;
-    width:70%;
+    width:40%;
     height:49px;
     display: block;
     margin-left:8px;
@@ -34,6 +34,21 @@
 }
 .buildings:hover{
     background-color: rgb(200,200,200)
+}
+#farmHover{
+    display:none;
+    position:fixed;
+    padding:10px;
+    background-color:rgb(240,240,240);
+    left:567px;
+    top:24px;
+    outline:black solid 2px;
+}
+#farm:hover + #farmHover{
+    display:block;
+}
+#mineHover{
+    display:none;
 }
 .buildingsContainer{
     background-color: darkgray;
@@ -63,7 +78,16 @@
     background-color:rgb(200,200,200)
 }
 #farm{
-    margin-top:12px;
+    position:fixed;
+    top:22px;
+    width:150px;
+    height:40px;
+}
+#mine{
+    position:fixed;
+    top:70px;
+    width:150px;
+    height:40px;
 }
 .resources {
     margin-top:8px;
@@ -98,12 +122,14 @@
     margin-top:24px;
     font-size:15px;
     text-align: left;
+    float:right;
 }
 .workerChangeButton{
     margin-bottom:35px;
     font-size:12px;
     height:23px;
     width:23px;
+    margin-left:5px;
 }
 .workerChangeButton:hover{
      background-color: rgb(200,200,200)
@@ -112,6 +138,7 @@
     text-align:center;
     background-color:rgb(200,200,200);
     border: black solid 2px;
+    margin-left:10px;
 }
 html{
     font-family:"JBMono";
