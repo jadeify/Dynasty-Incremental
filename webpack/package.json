@@ -2,7 +2,7 @@
   "name": "dynasty-incremental",
   "version": "1.0.0",
   "description": "A very long idle game.",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,9 +12,11 @@
   "dependencies": {
     "@antimatter-dimensions/notations": "^3.2.0",
     "break_infinity.js": "^2.2.0",
-    "typescript": "^5.4.5"
+    "lodash": "^4.17.21",
+    "typescript": "^5.4.5",
+    "webpack": "^5.91.0"
   },
   "devDependencies": {
-    "parcel": "^2.12.0"
+    "webpack-cli": "^5.1.4"
   }
 }

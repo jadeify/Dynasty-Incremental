@@ -1,5 +1,6 @@
-import Decimal from "../node_modules/break_infinity.js/dist/break_infinity.esm.js";
-import * as ADNotations from "../node_modules/@antimatter-dimensions/notations/dist/ad-notations.esm.js";
+import _ from 'lodash';
+import Decimal from "break_infinity.js";
+import * as ADNotations from "@antimatter-dimensions/notations";
 const mixedScientific=new ADNotations.MixedScientificNotation();
 let resources={
 	money:{amt:new Decimal(15)},
@@ -14,7 +15,7 @@ let buildings={
 	farm:{amt:new Decimal(0),price:new Decimal(15),rate1:new Decimal(0.15),rate2:new Decimal(0.07)},
 	mine:{amt:new Decimal(0),price:new Decimal(100),rate1:new Decimal(0.13),rate2:new Decimal(0.06),rate3:new Decimal(0.1)}
 };
-let employees=[{name:"john figgle",intelligence:new Decimal(1),}];
+let employees=[];
 function addEmployee(name, intelligence, charisma, strength, vitality, dexterity){
 	employees.push({name:name, intelligence:intelligence, charisma:charisma, strength:strength, vitality:vitality, dexterity:dexterity});
 }

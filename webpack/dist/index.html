@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <title>Dynasty Incremental</title>
-        <link rel="stylesheet" href="css/styles.css">
-        <script type="module" src="js/index.js"></script>
+        <link rel="stylesheet" href="styles.css">
+        <script src="main.js"></script>
     </head>
         <body style="background-color:rgb(50,50,50)">
             <div class="sectionLeft">
@@ -17,15 +17,15 @@
                         <span id="stone">0</span> stone (+<span id="stonePS">0</span>/s)<br>
                         <span id="metal">0</span> metal (+<span id="metalPS">0</span>/s)<br>
                         <span id="coal">0</span> coal (+<span id="coalPS">0</span>/s)<br>
-                        <button onclick="sellResources()" id="sellButton">Sell Resources for $</button>
+                        <button onclick="lib.sellResources()" id="sellButton">Sell Resources for $</button>
                     </div>
                 </div>
                 <div class="buildingsContainer">
-                    <button onclick="buyBuilding('farm')" class="buildings" id="farm">Buy Farm [<span id="farmCost">15 Money</span>]<br> <span id="farms">0 Farms</span></button>
-                    <button onclick="buyBuilding('mine')" class="buildings">Buy Mine [<span id="mineCost">100 Money</span>]<br> <span id="mines">0 Mines</span></button>
+                    <button onclick="lib.buyBuilding('farm')" class="buildings" id="farm">Buy Farm [<span id="farmCost">15 Money</span>]<br> <span id="farms">0 Farms</span></button>
+                    <button onclick="lib.buyBuilding('mine')" class="buildings">Buy Mine [<span id="mineCost">100 Money</span>]<br> <span id="mines">0 Mines</span></button>
                     <div class="workerChangeButtonContainer">
-                        <button style="margin-left:49px;" class="workerChangeButton" onclick="changeWorkerAmount('farm',-1)">-</button>&nbsp<button class="workerChangeButton" onclick="changeWorkerAmount('farm',1)">+</button><span class="workersAssigned" id="farmWorkerAssigned">&nbsp0</span>&nbsp<br>
-                        <button style="margin-left:49px;" class="workerChangeButton" onclick="changeWorkerAmount('mine',-1)">-</button>&nbsp<button class="workerChangeButton" onclick="changeWorkerAmount('mine',1)">+</button><span class="workersAssigned" id="mineWorkerAssigned">&nbsp0</span>&nbsp
+                        <button class="workerChangeButton" onclick="lib.changeWorkerAmount('farm',-1)">-</button>&nbsp<button class="workerChangeButton" onclick="lib.changeWorkerAmount('farm',1)">+</button><span class="workersAssigned" id="farmWorkerAssigned">&nbsp0&nbsp</span><br>
+                        <button class="workerChangeButton" onclick="lib.changeWorkerAmount('mine',-1)">-</button>&nbsp<button class="workerChangeButton" onclick="lib.changeWorkerAmount('mine',1)">+</button><span class="workersAssigned" id="mineWorkerAssigned">&nbsp0&nbsp</span>
                     </div>
                 </div>
             </div>
@@ -34,7 +34,7 @@
                     <div class="workers">
                         <span style="font-weight:bold;font-size:18px">Workers</span><br>
                         Amount: <span id="workersAmt">0</span><br>
-                        <button onClick="hireWorker()" id="workerButton">Hire Worker [<span id="workerCost">50 money/min</span>]</button>
+                        <button onClick="lib.hireWorker()" id="workerButton">Hire Worker [<span id="workerCost">50 money/min</span>]</button>
                     </div>
                 </div>
             </div>
